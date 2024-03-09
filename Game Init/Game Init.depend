@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1709361477 source:c:\users\tuananh\onedrive\taÌi liêòu\code\game init\main.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+	"logic.h"
+	<ctime>
+	"input.h"
+
+1709307638 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\defs.h
+
+1709303571 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\graphics.h
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+
+1709358720 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\struct.h
+	<SDL.h>
+	"graphics.h"
+
+1709276990 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\stage.h
+	<iostream>
+	<SDL.h>
+	"struct.h"
+	"graphics.h"
+
+1709300591 source:c:\users\tuananh\onedrive\taÌi liêòu\code\game init\input.cpp
+	<SDL.h>
+	"defs.h"
+	"struct.h"
+
+1709361443 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\logic.h
+	<iostream>
+	<list>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+
+1709303311 c:\users\tuananh\onedrive\taÌi liêòu\code\game init\input.h
+	<SDL.h>
+	"defs.h"
+	"struct.h"
+
