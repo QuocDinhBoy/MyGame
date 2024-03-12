@@ -14,4 +14,10 @@ const char* WINDOW_TITLE = "Init";
 const int PLAYER_SPEED = 4;
 const int PLAYER_BULLET_SPEED = 16;
 const int MAX_KEYBOARD_KEYS = 350;
+const int MAN_CLIPS[][4] = {
+    {  0, 0, 64, 64},
+    { 64, 0, 64, 64},
+    {128, 0, 64, 64},
+    {192, 0, 64, 64}};
+const int MAN_FRAMES = sizeof(MAN_CLIPS)/sizeof(int)/4;
 #endif // DEFS_H_INCLUDED

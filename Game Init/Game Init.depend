@@ -46,3 +46,41 @@
 	"defs.h"
 	"struct.h"
 
+1710080415 source:c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\main.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+	"logic.h"
+	<ctime>
+	"input.h"
+
+1710080695 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
+
+1710081849 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"struct.h"
+
+1710080665 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
+	<SDL.h>
+	"graphics.h"
+	<vector>
+
+1710081890 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
+	<iostream>
+	<list>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+
+1709977096 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\input.h
+	<SDL.h>
+	"defs.h"
+	"struct.h"
+

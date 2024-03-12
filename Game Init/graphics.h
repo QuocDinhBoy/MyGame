@@ -4,7 +4,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include "defs.h"
-
+#include "struct.h"
 struct Graphics {
     SDL_Renderer *renderer;
 	SDL_Window *window;
@@ -78,7 +78,11 @@ struct Graphics {
 
         SDL_RenderCopy(renderer, texture, src, &dest);
     }
-
+    void render(int x, int y, const Entity& entity) {
+        const SDL_Rect* clip = entity.getCurrentClip();
+        SDL_Rect renderQuad = {x, y, clip->w, clip->h};
+        SDL_RenderCopy(renderer, entity.texture, clip, &renderQuad);
+    }
     void quit()
     {
         IMG_Quit();

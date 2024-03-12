@@ -41,7 +41,6 @@ int main (int agr,char* argv[])
 
 		graphics.presentScene();
 
-
 	}
     graphics.quit();
     return 0;

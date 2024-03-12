@@ -25,8 +25,8 @@ struct Game {
     list <Entity*> fighters;
     int stageResetTimer;
     void empty(list<Entity*>& entities) {
-        while (!entities.empty()) { //empty la kiem tra xem co trong khong
-            Entity* e = entities.front(); //tham chieu toi phan tu dau tien
+        while (!entities.empty()) {
+            Entity* e = entities.front();
             entities.pop_front();
             if (e != &player) delete e;
         }
@@ -43,9 +43,9 @@ struct Game {
     }
 
     void init(Graphics& graphics) {
-    player.texture = graphics.loadTexture("image/thang main.png");
+//    player.texture = graphics.loadTexture("image/thang main.png");
     SDL_QueryTexture(player.texture,NULL,NULL,&player.w, &player.h);
-
+    player.texture = graphics.loadTexture("image/Gunner_Blue_Run.png");
     bulletTexture = graphics.loadTexture("image/bullet.png");
     background = graphics.loadTexture("image/background.jpg");
     reset();
@@ -69,25 +69,20 @@ struct Game {
 }
 
     void doPlayer(int keyboard[]){
-
+        Graphics graphics;
+    player.init(player.texture,MAN_FRAMES,MAN_CLIPS);
     if (player.health == 0) return;
     player.dx = player.dy = 0;
     if (player.reload > 0) player.reload --;
 
     if (keyboard[SDL_SCANCODE_UP] || keyboard[SDL_SCANCODE_W]) if (player.y == 320) player.dy = -60;
     if (keyboard[SDL_SCANCODE_LEFT] || keyboard[SDL_SCANCODE_A]) player.dx = -PLAYER_SPEED;
-    if (keyboard[SDL_SCANCODE_RIGHT] || keyboard[SDL_SCANCODE_D]) player.dx = PLAYER_SPEED;
+    if (keyboard[SDL_SCANCODE_RIGHT] || keyboard[SDL_SCANCODE_D]) {
+            player.dx = PLAYER_SPEED;}
+            player.tick();
+            graphics.render(player.x,player.y,player);
+
     if (keyboard[SDL_SCANCODE_SPACE] && player.reload == 0) fireBullet();}
-    bool bulletHitFighter(Entity *b)
-    {
-        for (Entity* fighter: fighters) { //duyet tung phan tu trong mang
-            if (fighter->side != b->side && b->collides(fighter)) {
-                fighter->health = 0;
-                return true;
-            }
-        }
-        return false;
-    }
     void doBullets(void)
     {
         auto it = bullets.begin();
@@ -95,7 +90,7 @@ struct Game {
             auto temp = it++;
             Entity* b = *temp;
             b->move();
-            if (bulletHitFighter(b) || b->offScreen()) {
+            if (b->offScreen()) {
                 delete b;
                 bullets.erase(temp);
             }
@@ -137,7 +132,7 @@ struct Game {
     }
 
     void doLogic(int keyboard[]) {
-        doBackground();
+//        doBackground();
 //        if (player.health == 0 && --stageResetTimer <= 0) reset();
          doPlayer(keyboard);
          doFighters();
@@ -157,7 +152,6 @@ struct Game {
 }
     void draw(Graphics& graphics) {
     drawBackground(graphics.renderer);
-    graphics.renderTexture(player.texture,player.x,player.y);
     for (Entity* b: bullets)
     graphics.renderTexture(b->texture, b->x, b->y);
 }
