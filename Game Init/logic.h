@@ -69,19 +69,13 @@ struct Game {
 }
 
     void doPlayer(int keyboard[]){
-        Graphics graphics;
-    player.init(player.texture,MAN_FRAMES,MAN_CLIPS);
     if (player.health == 0) return;
     player.dx = player.dy = 0;
     if (player.reload > 0) player.reload --;
 
     if (keyboard[SDL_SCANCODE_UP] || keyboard[SDL_SCANCODE_W]) if (player.y == 320) player.dy = -60;
     if (keyboard[SDL_SCANCODE_LEFT] || keyboard[SDL_SCANCODE_A]) player.dx = -PLAYER_SPEED;
-    if (keyboard[SDL_SCANCODE_RIGHT] || keyboard[SDL_SCANCODE_D]) {
-            player.dx = PLAYER_SPEED;}
-            player.tick();
-            graphics.render(player.x,player.y,player);
-
+    if (keyboard[SDL_SCANCODE_RIGHT] || keyboard[SDL_SCANCODE_D]) player.dx = PLAYER_SPEED;
     if (keyboard[SDL_SCANCODE_SPACE] && player.reload == 0) fireBullet();}
     void doBullets(void)
     {

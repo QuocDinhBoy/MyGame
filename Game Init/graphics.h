@@ -36,7 +36,6 @@ struct Graphics {
 
 	void prepareScene(void)
     {
-        SDL_SetRenderDrawColor(renderer, BG_COLOR_R, BG_COLOR_G, BG_COLOR_B, BG_COLOR_A);
         SDL_RenderClear(renderer);
     }
 

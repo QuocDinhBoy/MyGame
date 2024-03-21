@@ -59,18 +59,18 @@
 
 1710080695 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
 
-1710081849 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
+1710248302 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
 	<SDL.h>
 	<SDL_image.h>
 	"defs.h"
 	"struct.h"
 
-1710080665 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
+1710247864 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
 	<SDL.h>
 	"graphics.h"
 	<vector>
 
-1710081890 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
+1710248332 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
 	<iostream>
 	<list>
 	<SDL.h>

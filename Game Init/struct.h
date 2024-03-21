@@ -45,7 +45,5 @@ struct Entity {
         y += dy;
 	}
 };
-struct App {
-    int keyboard[MAX_KEYBOARD_KEYS];
-};
+
 #endif // _STRUCT__H
