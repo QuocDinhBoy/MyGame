@@ -6,6 +6,7 @@
 #include <vector>
 using namespace std;
 struct Entity {
+    Uint32 deathTime;
     int x;
     int y;
     int w;
@@ -16,14 +17,11 @@ struct Entity {
     int side;
     int health;
     SDL_Texture *texture;
-    std::vector<SDL_Rect> clips;
+    vector<SDL_Rect> clips;
     int currentFrame = 0;
-    bool offScreen() {
-	     return x < -w || y < -h || x > SCREEN_WIDTH || y > SCREEN_HEIGHT;
-	}
-	void init(SDL_Texture* _texture, int frames, const int _clips [][4]) {
+    int frameTime = 0;
+    void init(SDL_Texture* _texture, int frames, const int _clips [][4]) {
         texture = _texture;
-
         SDL_Rect clip;
         for (int i = 0; i < frames; i++) {
             clip.x = _clips[i][0];
@@ -33,16 +31,26 @@ struct Entity {
             clips.push_back(clip);
         }
     }
-    void tick() {
-        currentFrame = (currentFrame + 1) % clips.size();
+    void tick(int delay) {
+        frameTime++;
+        if(frameTime == delay) {
+                frameTime = 0;
+                currentFrame = (currentFrame + 1) % clips.size();
+        }
     }
-
     const SDL_Rect* getCurrentClip() const {
         return &(clips[currentFrame]);
     }
+    bool offScreen() {
+	     return x < -w || x > SCREEN_WIDTH || y > SCREEN_HEIGHT;
+	}
 	void move() {
         x += dx;
         y += dy;
+	}
+	bool collision(Entity* other) {
+	    return (max(x, other->x) < min(x + w, other->x + other->w/2 - 20))
+	        && (max(y, other->y) < min(y + h, other->y + other->h - 40));
 	}
 };
 

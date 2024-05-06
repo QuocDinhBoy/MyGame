@@ -46,7 +46,7 @@
 	"defs.h"
 	"struct.h"
 
-1710080415 source:c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\main.cpp
+1714923288 source:c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\main.cpp
 	<iostream>
 	<SDL.h>
 	<SDL_image.h>
@@ -54,23 +54,28 @@
 	"graphics.h"
 	"struct.h"
 	"logic.h"
-	<ctime>
 	"input.h"
+	<ctime>
+	<SDL_ttf.h>
+	"intro.h"
+	"gameover.h"
 
-1710080695 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
+1714920915 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
 
-1710248302 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
+1714923363 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
 	<SDL.h>
 	<SDL_image.h>
 	"defs.h"
 	"struct.h"
+	<SDL_mixer.h>
+	<SDL_ttf.h>
 
-1710247864 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
+1714743265 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
 	<SDL.h>
 	"graphics.h"
 	<vector>
 
-1710248332 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
+1714923288 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
 	<iostream>
 	<list>
 	<SDL.h>
@@ -78,9 +83,32 @@
 	"defs.h"
 	"graphics.h"
 	"struct.h"
+	<SDL_ttf.h>
 
-1709977096 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\input.h
+1714920217 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\input.h
 	<SDL.h>
 	"defs.h"
 	"struct.h"
+	"logic.h"
+	"graphics.h"
+
+1714918418 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\intro.h
+	<iostream>
+	<list>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+	<SDL_ttf.h>
+
+1714923348 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\gameover.h
+	<iostream>
+	<list>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+	"graphics.h"
+	"struct.h"
+	<SDL_ttf.h>
 
