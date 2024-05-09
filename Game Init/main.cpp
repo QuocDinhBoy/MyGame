@@ -29,7 +29,6 @@ int main (int agr,char* argv[])
     GameOver gameover;
     gameover.init(graphics);
 
-    int x, y;
     while (1)
 	{
 		graphics.prepareScene();

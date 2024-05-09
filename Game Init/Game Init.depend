@@ -46,7 +46,7 @@
 	"defs.h"
 	"struct.h"
 
-1714923288 source:c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\main.cpp
+1715160127 source:c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\main.cpp
 	<iostream>
 	<SDL.h>
 	<SDL_image.h>
@@ -60,9 +60,9 @@
 	"intro.h"
 	"gameover.h"
 
-1714920915 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
+1715218621 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\defs.h
 
-1714923363 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
+1715218478 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\graphics.h
 	<SDL.h>
 	<SDL_image.h>
 	"defs.h"
@@ -70,12 +70,12 @@
 	<SDL_mixer.h>
 	<SDL_ttf.h>
 
-1714743265 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
+1715218098 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\struct.h
 	<SDL.h>
 	"graphics.h"
 	<vector>
 
-1714923288 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
+1715218955 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\logic.h
 	<iostream>
 	<list>
 	<SDL.h>
@@ -84,15 +84,17 @@
 	"graphics.h"
 	"struct.h"
 	<SDL_ttf.h>
+	<cmath>
 
-1714920217 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\input.h
+1715218478 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\input.h
 	<SDL.h>
 	"defs.h"
 	"struct.h"
 	"logic.h"
 	"graphics.h"
+	<SDL_mixer.h>
 
-1714918418 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\intro.h
+1715218478 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\intro.h
 	<iostream>
 	<list>
 	<SDL.h>
@@ -102,7 +104,7 @@
 	"struct.h"
 	<SDL_ttf.h>
 
-1714923348 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\gameover.h
+1715218478 c:\users\tuananh\onedrive\taÌi liêòu\mygame\game init\gameover.h
 	<iostream>
 	<list>
 	<SDL.h>

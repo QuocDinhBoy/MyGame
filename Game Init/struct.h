@@ -6,13 +6,14 @@
 #include <vector>
 using namespace std;
 struct Entity {
-    Uint32 deathTime;
+    int type;
     int x;
     int y;
     int w;
     int h;
     double dx;
     double dy;
+    int time = 0;
     int reload;
     int side;
     int health;
@@ -53,5 +54,4 @@ struct Entity {
 	        && (max(y, other->y) < min(y + h, other->y + other->h - 40));
 	}
 };
-
 #endif // _STRUCT__H

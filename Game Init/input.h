@@ -3,13 +3,13 @@
 #include "struct.h"
 #include "logic.h"
 #include "graphics.h"
+#include <SDL_mixer.h>
 struct Input {
     int reveal = 0;
     int x,y;
     int keyboard[MAX_KEYBOARD_KEYS] = {0};
 
-	void init()
-    {
+	void init(){
         for (int i = 0; i < MAX_KEYBOARD_KEYS; i++) keyboard[i] = 0;
     }
 

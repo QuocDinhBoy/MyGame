@@ -15,15 +15,18 @@ struct Menu{
     int reveal = 0;
     SDL_Texture *background,*logo,*play,*exit;
     int backgroundX = 0;
+
     void init(Graphics& graphics){
         background = graphics.loadTexture("image/background.jpg");
         logo = graphics.loadTexture("image/logo.png");
         play = graphics.loadTexture("image/play.png");
         exit = graphics.loadTexture("image/exit.png");
     }
+
     void doBackground(void) {
     if(--backgroundX < -SCREEN_WIDTH) backgroundX = 0;
     }
+
     void drawBackground(SDL_Renderer*renderer) {
         SDL_Rect dest;
         for (int x = backgroundX;x < SCREEN_WIDTH;x += SCREEN_WIDTH) {
@@ -35,6 +38,7 @@ struct Menu{
             SDL_RenderCopy(renderer,background,NULL,&dest);
         }
     }
+
     void drawLogo(Graphics&graphics) {
         SDL_Rect dest;
         dest.x = 0;
@@ -47,12 +51,12 @@ struct Menu{
             graphics.renderTexture(exit,SCREEN_WIDTH/2 - 125,507);
         }
     }
+
     void doLogic()  {
         doBackground();
-        if(reveal < 350) {
-            reveal++;
-          }
-        }
+        if(reveal < 350) reveal++;
+    }
+
     void draw(Graphics&graphics) {
         drawBackground(graphics.renderer);
         drawLogo(graphics);
