@@ -3,7 +3,7 @@
  - Họ và tên: Nguyễn Đình Quốc
  - MSSV: 23021675
  ## Game:
- -Chủ đề game: 
+ - Chủ đề game: 
  + Máy bay bắn súng
  + Người chơi cần vừa thao tác di chuyển vừa bắn súng để tiêu diệt quái vật
 - Ngưỡng điểm mong muốn:8.5
